@@ -1,22 +1,16 @@
 {
-  "name": "@workspace/discord-bot",
-  "version": "0.0.0",
-  "private": true,
-  "main": "src/index.ts",
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "main": "dist/index.js",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
-    "start": "tsx src/index.ts",
-    "deploy-commands": "tsx src/deploy-commands.ts"
+    "build": "tsc",
+    "start": "node dist/index.js"
   },
   "dependencies": {
-    "@napi-rs/canvas": "^0.1.97",
-    "better-sqlite3": "^11.10.0",
-    "discord.js": "^14.17.3"
+    "discord.js": "^14.14.1"
   },
   "devDependencies": {
-    "@types/better-sqlite3": "^7.6.13",
-    "@types/node": "catalog:",
-    "tsx": "catalog:",
-    "typescript": "~5.9.2"
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0"
   }
 }
